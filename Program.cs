@@ -42,20 +42,23 @@ static void DrawerTriangle()
 static void DrawerSquare(){
     
     Console.Write("Enter the side length of the square: ");
-    int Length = Convert.ToInt32(Console.ReadLine());
+    int side = Convert.ToInt32(Console.ReadLine());
     
-    for(int i = 0; i< Length;i++){
-        for(int j = 0; j< Length; j++){
+    for(int i = 0; i< side;i++)
+    {
+        for(int j = 0; j< side; j++)
+        {
             // ushbu qism chekkalarini * bilan chiqarish uchun
-            if(i == 0 || i == Length-1 || j == 0 || j == Length-1){
+
+            if(i == 0 || i == side - 1 || j == 0 || j == side - 1){
                 Console.Write("* ");
             }
             // ushbu qism o'rtalarini bo'sh holda chiqarish uchun
             else{
-                Console.Write(" ");
+                Console.Write("  ");
             }
         }
-        Console.WriteLine("");
+        Console.WriteLine();
     }
 }
 
