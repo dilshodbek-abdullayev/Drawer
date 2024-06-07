@@ -63,6 +63,7 @@ static void DrawerTriangle()
 ```
 MethodTriangle
 Result:
+
 ![alt text](image.png)
 
 ### MethodSquare
